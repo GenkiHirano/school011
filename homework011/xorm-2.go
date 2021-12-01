@@ -7,15 +7,16 @@ import (
 	"xorm.io/xorm"
 )
 
-// 問題5
-type Student struct {
+// 問題6
+
+// Student構造体を実装してください。
+
+// insertSumStudent を実装してください。
+// 中身を適宜変更してください。引数も変更して大丈夫です。
+func insertSumStudent(engine xorm.Engine, students []Student) {
 }
 
-// XORMを使って、問題5の仕様を実装してください。
-func InsertSum() {
-}
-
-func Delete(engine xorm.Engine) {
+func deleteStudent(engine xorm.Engine) {
 	student := Student{}
 	result, err := engine.Where("class=?", 1).Delete(&student)
 	if err != nil {
@@ -27,8 +28,8 @@ func Delete(engine xorm.Engine) {
 	fmt.Println("user:", student)
 }
 
-func Task5() {
-	fmt.Println("homework011_5")
+func Task6() {
+	fmt.Println("homework011_6")
 
 	engine, err := xorm.NewEngine("mysql", "root:root@tcp([127.0.0.1]:3306)/sample_db?charset=utf8mb4&parseTime=true")
 	if err != nil {
@@ -66,6 +67,9 @@ func Task5() {
 
 	students := []Student{studentA, studentB, studentC}
 
+	// 各関数を実行します
+
 	// InsertSum関数を実行してください。
-	Delete(*engine)
+
+	deleteStudent(*engine)
 }

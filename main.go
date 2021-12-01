@@ -11,4 +11,5 @@ func main() {
 	homework011.Task3()
 	homework011.Task4()
 	homework011.Task5()
+	homework011.Task6()
 }

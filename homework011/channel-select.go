@@ -21,10 +21,10 @@ func receiveValue() {
 
 func Task4() {
 	fmt.Println("homework011_4")
-	s := []int{1, 2, 3, 4, 5}
-	sum := make(chan int)
-	even := make(chan int)
-	odd := make(chan int)
-	quit := make(chan bool)
+	// s := []int{1, 2, 3, 4, 5}
+	// sum := make(chan int)
+	// even := make(chan int)
+	// odd := make(chan int)
+	// quit := make(chan bool)
 
 }
